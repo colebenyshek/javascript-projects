@@ -1,0 +1,39 @@
+<!-- 
+Weather App 
+Cole Benyshek - January 2022
+Modeled after project from Dev Ed:
+https://www.youtube.com/watch?v=wPElVpR1rwA&t=2s 
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App</title>
+        <!-- Fonts (Google Fonts) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <!-- Styles -->
+        <link rel="stylesheet" href="styles.css" type="text/css" media="all" />
+        <!-- Javascript -->
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div class="content-wrap">
+            <div class="location">
+                <h1 class="location-timezone">Timezone</h1>
+                <div class="location-icon"></div>
+            </div>
+            <div class="temperature">
+                <div class="degree-section">
+                    <h2 class="temperature-degree"></h2>
+                    <span class="unit">°F</span>
+                </div>
+                <div class="temperature-description"></div>
+            </div>
+            <footer class="credit">Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a></footer>
+        </div>
+    </body>
+</html>

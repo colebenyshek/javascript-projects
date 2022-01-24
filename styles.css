@@ -1,0 +1,96 @@
+/* 
+Weather App 
+Cole Benyshek - January 2022
+Modeled after project from Dev Ed:
+https://www.youtube.com/watch?v=wPElVpR1rwA&t=2s 
+ */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles 
+----------------------------------------*/
+
+body {
+    background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Content 
+---------------------------------------*/
+
+.content-wrap {
+    width: 75%;
+    max-width: 750px;
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid white;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.content-wrap:hover {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s linear;
+}
+
+.location, .temperature {
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.temperature {
+    flex-direction: column;
+}
+
+.icon {
+    width: 77px;
+}
+
+.degree-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.degree-section span {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.degree-section h2 {
+    font-size: 40px;
+}
+
+.credit {
+    font-size: 0.75rem;
+    color: rgb(210,210,210);
+    padding: 0 0 2vh 0;
+}
+
+.credit a {
+    color: rgb(210,210,210);
+    text-decoration: none;
+}
+
+.credit a:hover {
+    color: rgb(210,210,210,0.8);
+}
