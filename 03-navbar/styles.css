@@ -1,0 +1,157 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Global Styles
+-----------------------------------*/
+body {
+    color: #343434;
+    background: #dddddd;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    word-spacing: 0.2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.nav-center {
+    background: #FFFFFF;
+    box-shadow: 5px 5px 5px rgba(37, 37, 37, 0.1);
+    padding: 1rem;
+}
+
+.nav-center:hover {
+    box-shadow: 5px 5px 5px rgba(37, 37, 37, 0.20);
+}
+
+/* Navigation Header
+----------------------------------*/
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-toggle {
+    color: rgb(135,48,78);
+    background: transparent;
+    border: 0 solid #FFFFFF;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.4s linear;
+}
+
+.nav-toggle:hover {
+    color: rgba(135, 48, 78, 0.75);
+    transform: rotate(90deg);
+    border: 2px solid rgba(135, 48, 78, 0.9);
+    border-radius: 10%;
+}
+
+.logo {
+    height: 100px;
+}
+
+/* Links
+----------------------------------*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: grid;
+}
+
+.links a {
+    /* color: rgb(135, 48, 78);  maroon (logo)*/
+    color: #343434;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2.5rem;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.links a:hover {
+    background: rgba(200, 200, 200, 0.3);
+    color: rgba(52, 52, 52, 0.75);
+    padding-left: 1.5rem;
+    transition: all 0.2s linear
+}
+
+.links {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.4s linear;
+}
+
+/* height 56px
+total 280px */
+
+.social-icons {
+    display: none;
+}
+
+.show-links {
+    height: 280px;
+}
+
+
+/* Accessibility
+----------------------------------*/
+@media all and (min-width: 1150px) {
+    .nav-center {
+        /* max-width: 1100px; */
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .links {
+        height: auto;
+        display: flex;
+    }
+
+    .links a {
+        padding: 0;
+        margin: 0 1.125rem;
+    }
+
+    .links a:hover {
+        padding: 0;
+        background: transparent;
+    }
+
+    .social-icons {
+        display: flex;
+    }
+
+    .social-icons a {
+        margin: 0 0.75rem;
+        color: rgb(135, 48, 78);
+    }
+
+    .social-icons a:hover {
+        color: rgba(52, 52, 52, 0.75);
+    }
+}
+
+
+

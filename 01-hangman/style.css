@@ -1,0 +1,154 @@
+/*
+    Hangman Game!
+    Cole Benyshek - December 2021
+*/
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Global Styles
+------------------------------------*/
+
+body {
+    color: #FFFFFF;
+    background: #54BD4C;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Title & Instructions
+------------------------------------*/
+
+.top-wrapper {
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+    align-self: center;
+}
+
+.title, .instructions {
+    text-align: center;
+}
+
+.title {
+    font-size: 66px;
+    margin-bottom: 0px;
+}
+
+.instructions {
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+/* Hangman Image
+-----------------------------------*/
+.hangman-canvas {
+    display: flex;
+    width: 280px;
+    height: 210px;
+    margin: auto;
+    border: 3px solid #FFFFFF;
+    border-radius: 5%;
+    margin-bottom: 30px;
+}
+
+/* Hangman Word
+-----------------------------------*/
+.word-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: auto;
+    height: 105px;
+    column-gap: 50px;
+    font-size: 60px;
+    font-family: 'Courier Prime', monospace;
+}
+
+.word-wrapper > div {
+    border-bottom: 5px solid #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.guessed-letters, .lives-left {
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 0;
+}
+
+.lives-left {
+    padding: 0;
+    margin: 0 25px 5px 0;
+}
+
+.lives-left .lives {
+    font-size: 40px;
+    font-family: 'Courier Prime', monospace;
+}
+
+/* Alphabet Buttons
+-----------------------------------*/
+.btn-wrapper {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-self: center;
+}
+
+.btn-wrapper > input {
+    font-family: 'Courier Prime', monospace;
+    font-size: 45px;
+    color: #FFFFFF;
+    margin: 8px;
+    text-align: center;
+    padding: 0;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+    background: #54BD4C;
+}
+
+.btn-wrapper > input:hover {
+    background-color: rgba(98,216,89,85%);
+}
+
+.btn-wrapper > input:active {
+    background-color:rgba(175, 245, 171, 0.87);
+}
+
+/* Win Screen
+-----------------------------------*/
+.win-screen {
+    font-size: 55px;
+    text-align: center;
+}
+
+.win-screen img, .win-screen button {
+    text-align: center;
+    width: 100px;
+}
+
+.win-screen button {
+    background-color: #54BD4C; /* Green */
+    border: 1px solid #FFFFFF;
+    border-radius: 7px;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.win-screen button:hover {
+    background-color: rgba(98,216,89,85%);
+    cursor: pointer;
+}
+
+.win-screen button:active {
+    background-color:rgba(175, 245, 171, 0.87);
+}
